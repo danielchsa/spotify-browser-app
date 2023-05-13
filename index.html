@@ -1,0 +1,87 @@
+<html lang="esp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./imgs/spotify.png" />
+    <title>Spotify Search</title>
+  </head>
+  <body>
+    <section class="container logo"></section>
+    <section class="container">
+      <div class="form">
+        <form class="inputs" id="frm">
+          <input
+            type="text"
+            class="search"
+            id="search"
+            autocomplete="off"
+            placeholder="Search your favorite artist..."
+          />
+          <button class="button btn-submit">
+            <i class="ph ph-magnifying-glass icon"></i>Search
+          </button>
+        </form>
+      </div>
+    </section>
+    <main class="results container" id="songs">
+      <!-- <div class="card">
+        <div class="avatar">
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb81a0ab3a9a4326929a01b0f1"
+            alt="Illenium"
+          />
+        </div>
+        <div class="info">
+          <div class="details">
+            <h3>Worst Day (FIGHT CLVB x Tannergard Remix)</h3>
+            <span>Year: 2022</span>
+          </div>
+          <footer>
+            <a href="" class="button listen">
+              <i class="ph ph-spotify-logo icon"></i>Listen on Spotify</a
+            >
+          </footer>
+        </div>
+      </div> -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info">
+          <div class="app-logo">
+            <img src="./imgs/spotify.png" alt="App Logo" />
+            <h3>Spotify Songs</h3>
+          </div>
+          <div class="app-links">
+            <h4>Follow me</h4>
+            <div class="social-links">
+              <div class="link">
+                <i class="ph ph-github-logo icon"></i>
+                <a href="#">Github</a>
+              </div>
+              <div class="link">
+                <i class="ph ph-linkedin-logo icon"></i>
+                <a href="#">LinkedIn</a>
+              </div>
+              <div class="link">
+                <i class="ph ph-instagram-logo icon"></i>
+                <a href="#">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

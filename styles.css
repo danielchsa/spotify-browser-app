@@ -1,0 +1,295 @@
+:root {
+  --primaryFont: "Roboto", sans-serif;
+  --secundaryFont: "Barlow Semi Condensed", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: var(--secundaryFont);
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 1.8;
+  background-color: #191414;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 50%;
+  height: 20rem;
+  background-image: url("./imgs/spotify_logo.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    background-size: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    background-size: 35%;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .inputs {
+    flex-direction: row;
+    gap: 0;
+    align-items: stretch;
+  }
+}
+
+.form input[type="text"] {
+  font-family: var(--secundaryFont);
+  font-size: 1.6rem;
+  color: #fff;
+  border: 0.2rem solid #6d6d6d;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  background: transparent;
+}
+
+.form input::placeholder {
+  color: #6d6d6d;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .form input[type="text"] {
+    font-family: var(--secundaryFont);
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    border-right: none;
+    border-radius: 2rem 0 0 2rem;
+  }
+}
+
+.results {
+  margin-top: 5rem;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.card {
+  margin: 0 auto 2rem auto;
+  background: #1a1a1a;
+  width: 70%;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px 3px #131313;
+  transition: all 0.2s ease;
+}
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+.card:last-child {
+  margin: 0 auto;
+}
+.avatar {
+  min-width: 10rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .info {
+    width: auto;
+  }
+}
+
+.info h3 {
+  margin: 0;
+}
+
+.info span {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.button {
+  background: #1db954;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: background 0.3s;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+
+.button:hover {
+  background: #29d866;
+}
+
+.listen {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease all;
+}
+@media (min-width: 768px) {
+  .listen {
+    width: 20rem;
+  }
+}
+
+.listen:hover {
+  transform: scale(1.05);
+}
+
+.btn-submit {
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .btn-submit {
+    width: 15rem;
+    border: none;
+    border-radius: 0 2rem 2rem 0;
+    padding: 1.5rem 2rem;
+  }
+}
+
+.footer {
+  width: 100%;
+  background: #1a1a1a;
+}
+.footer-info {
+  margin: 8rem auto 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .footer-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.app-logo {
+  height: 10rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.app-logo img {
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+}
+
+.app-logo h3 {
+  width: 100%;
+  margin: 0;
+  font-family: var(--primaryFont);
+}
+
+.app-links h4 {
+  text-align: center;
+  font-family: var(--primaryFont);
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.1rem;
+  background-color: #1db954;
+  transition: width 0.2s ease-in-out;
+}
+
+.link a:hover::after {
+  width: 100%;
+}
